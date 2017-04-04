@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"continuation-local-storage",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "continuation-local-storage",
+    "description": "api documentation for [continuation-local-storage (v3.2.0)](https://github.com/othiym23/node-continuation-local-storage#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-continuation-local-storage.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-continuation-local-storage) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-continuation-local-storage.svg)](https://travis-ci.org/npmdoc/node-npmdoc-continuation-local-storage)",
     "devDependencies": {
         "continuation-local-storage": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-continuation-local-storage",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-continuation-local-storage",
+    "keywords": [
+        "documentation",
+        "continuation-local-storage"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_continuation_local_storage.js",
+    "name": "npmdoc-continuation-local-storage",
+    "nameAlias": "npmdoc_continuation_local_storage",
+    "nameOriginal": "npmdoc-continuation-local-storage",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-continuation-local-storage.git"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
