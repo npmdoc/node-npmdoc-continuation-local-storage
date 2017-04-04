@@ -1,0 +1,17 @@
+{
+    "buildNpmdoc":"continuation-local-storage",
+    "devDependencies": {
+        "continuation-local-storage": "*",
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "name":"npmdoc-continuation-local-storage",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-continuation-local-storage.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh"
+    },
+    "version": "0.0.1"
+}
