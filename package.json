@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "buildNpmdoc": "continuation-local-storage",
-    "description": "api documentation for [continuation-local-storage (v3.2.0)](https://github.com/othiym23/node-continuation-local-storage#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-continuation-local-storage.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-continuation-local-storage) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-continuation-local-storage.svg)](https://travis-ci.org/npmdoc/node-npmdoc-continuation-local-storage)",
+    "description": "#### basic api documentation for  [continuation-local-storage (v3.2.0)](https://github.com/othiym23/node-continuation-local-storage#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-continuation-local-storage.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-continuation-local-storage) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-continuation-local-storage.svg)](https://travis-ci.org/npmdoc/node-npmdoc-continuation-local-storage)",
     "devDependencies": {
         "continuation-local-storage": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
